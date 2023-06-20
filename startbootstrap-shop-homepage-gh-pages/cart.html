@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cart</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+    h2 {
+      margin-bottom: 20px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+    }
+    tr:hover {
+      background-color: #f5f5f5;
+    }
+    input[type="number"] {
+      width: 50px;
+    }
+    .total {
+      margin-top: 20px;
+      font-weight: bold;
+    }
+    .checkout {
+      margin-top: 20px;
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <h2>CART</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Price</th>
+        <th>Amount</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>A Pearl Bracelet</td>
+        <td>62,000</td>
+        <td><input type="number" min="1" value="1"></td>
+      </tr>
+      <tr>
+        <td>A Cubic Bracelet</td>
+        <td>45,000</td>
+        <td><input type="number" min="1" value="1"></td>
+      </tr>
+      <tr>
+        <td>A Cubic Ring</td>
+        <td>30,000</td>
+        <td><input type="number" min="1" value="1"></td>
+      </tr>
+    </tbody>
+  </table>
+  <div class="total">
+    SUM: 107,000
+  </div>
+  <button type="button" onclick="location.href='PAY.html';">ORDER</button>
+</body>
+</html>
